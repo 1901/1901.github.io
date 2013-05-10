@@ -3,7 +3,10 @@ layout: default
 title: 首页
 ---
 
+<!-- 　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li> -->
 
 <ul>
-	<li>hi, 1901</li>
+	{% for post in site.posts %}
+		<li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
 </ul>
