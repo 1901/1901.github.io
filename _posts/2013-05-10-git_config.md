@@ -3,7 +3,7 @@ layout: post
 title: Git常用基本操作
 ---
 
-
+{% highlight shell %}
 	# gitconfig配置。参数可选（auto, ture, false）
 	$ git config --global color.status auto
 	$ git config --global color.diff auto
@@ -44,4 +44,4 @@ title: Git常用基本操作
 	$ git remote rm origin				# 删除名为origin的远程库
 	$ git push origin master			# 提交本地库的分支(master)变动到远程库(origin)
 	$ git pull origin master			# 把远程库(origin)的内容更新到本地当库并合并到当前分支(master)
-
+{% endhighlight %}
