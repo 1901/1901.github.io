@@ -5,7 +5,9 @@ title: Git常用基本操作
 
 {% highlight bash %}
 
-
+	# 学习Git参考手册时记录的笔记。
+	# http://gitref.cyj.me/zh/index.html
+	#
 	# gitconfig配置。参数可选（auto, ture, false）
 	$ git config --global color.status auto
 	$ git config --global color.diff auto
