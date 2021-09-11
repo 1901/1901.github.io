@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1901 防糊涂笔记</title>
+    <link>https://1901.github.io/</link>
+    <description>Recent content on 1901 防糊涂笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 11 Sep 2021 16:48:18 +0800</lastBuildDate><atom:link href="https://1901.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 Hugo 搭建博客</title>
+      <link>https://1901.github.io/posts/%E4%BD%BF%E7%94%A8-Hugo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Fri, 10 Sep 2021 20:07:01 +0800</pubDate>
+      
+      <guid>https://1901.github.io/posts/%E4%BD%BF%E7%94%A8-Hugo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>尝试使用 Hugo 来搭建静态博客。
+安装 #  我是用的 macOS，如果是其他系统请直接参考 官方文档。
+brew install hugo 创建博客 #  hugo new site myblog 安装主题 #  可以在这里找到你喜欢的主题。(本站采用的就是 hugo-book 主题)
+  https://themes.gohugo.io  cd themes git clone --depth 1 https://github.com/alex-shpak/hugo-book book </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://1901.github.io/about/</link>
+      <pubDate>Fri, 10 Sep 2021 19:53:27 +0800</pubDate>
+      
+      <guid>https://1901.github.io/about/</guid>
+      <description>1901 #   Welcome to my website.  </description>
+    </item>
+    
+    <item>
+      <title>iOS 中安装 SSH 及常用终端工具</title>
+      <link>https://1901.github.io/posts/ios%E4%B8%AD%E5%AE%89%E8%A3%85SSH%E5%8F%8A%E5%B8%B8%E7%94%A8%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Wed, 14 Nov 2012 14:56:31 +0800</pubDate>
+      
+      <guid>https://1901.github.io/posts/ios%E4%B8%AD%E5%AE%89%E8%A3%85SSH%E5%8F%8A%E5%B8%B8%E7%94%A8%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7/</guid>
+      <description>  使用 Cydia 搜索并安装 OpenSSH。
+  使用 Cydia 搜索并安装 MobileTerminal Package。
+  使用 Cydia 安装 apt 0.7 strict, apt 0.7 strict(lib), apt 0.7 HTTPS Method, apt 0.7(apt-key)。
+  使用 MobileTerminal 登录。
+ root 默认密码：alpine mobile 默认密码：alpine    启动 MobileTerminal 安装常用工具 #  su root # 然后输入root密码 &amp;gt; apt-get install inetutils # ping 命令需要 &amp;gt; apt-get install ifconfig &amp;gt; apt-get install netstat &amp;gt; apt-get install more &amp;gt; apt-get install vim </description>
+    </item>
+    
+    <item>
+      <title>Sqlite 基础知识</title>
+      <link>https://1901.github.io/posts/sqlite%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Sun, 14 Oct 2012 14:49:48 +0800</pubDate>
+      
+      <guid>https://1901.github.io/posts/sqlite%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
+      <description>sqlite官方网站：www.sqlite.org
+启动 sqlite (打开终端，输入命令) #  打开当前目录下的test.db数据库，如果没有这个文件刚创建一个数据库。
+$ sqlite3 test.db  查看sqlite帮助内容  sqlite&amp;gt; .help  列出当前数据库中的所有表名  sqlite&amp;gt; .tables  执行一个sql文件  sqlite&amp;gt; .read f.sql  查看建表语句，指定参数则查看指定表的建表语句，不指定参数时查看所有表的建表语句  sqlite&amp;gt; .schema sqlite&amp;gt; .schema table 建表示例 #  CREATE TABLE kxtest( id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(100) NOT NULL, sex INTEGER DEFAULT 0, date DATE ); 其他 #  使用自增长字段时，引擎会自动产生一个sqlite_sequence表，用于记录每个表的自增长字段的已使用的最大值。
+ 用户可以使用下面的查询语句查询各个表自动增长的记录。  sqlite&amp;gt; select * from sqlite_sequence;  用户可以使用下面的语句清空自动增长记录。  sqlite&amp;gt; delete from sqlite_sequence; 说明：SQLite中没有 truncate 命令清空表，如果需要清空表，可以先删除表中的记录，再从 sqlite_sequence 中删除相应的记录</description>
+    </item>
+    
+    <item>
+      <title>Hello GitHub</title>
+      <link>https://1901.github.io/posts/hello-world/</link>
+      <pubDate>Fri, 12 Oct 2012 14:00:00 +0800</pubDate>
+      
+      <guid>https://1901.github.io/posts/hello-world/</guid>
+      <description> Hello GitHub  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://1901.github.io/shortcodes/buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://1901.github.io/shortcodes/buttons/</guid>
+      <description>Buttons #  Buttons are styled links that can lead to local page or external link.
+Example #  {{&amp;lt; button relref=&amp;#34;/&amp;#34; [class=&amp;#34;...&amp;#34;] &amp;gt;}}Get Home{{&amp;lt; /button &amp;gt;}} {{&amp;lt; button href=&amp;#34;https://github.com/alex-shpak/hugo-book&amp;#34; &amp;gt;}}Contribute{{&amp;lt; /button &amp;gt;}}  Get Home  Contribute  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://1901.github.io/shortcodes/columns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://1901.github.io/shortcodes/columns/</guid>
+      <description>Columns #  Columns help organize shorter pieces of content horizontally for readability.
+{{&amp;lt; columns &amp;gt;}} &amp;lt;!-- begin columns block --&amp;gt; # Left Content Lorem markdownum insigne... &amp;lt;---&amp;gt; &amp;lt;!-- magic separator, between columns --&amp;gt; # Mid Content Lorem markdownum insigne... &amp;lt;---&amp;gt; &amp;lt;!-- magic separator, between columns --&amp;gt; # Right Content Lorem markdownum insigne... {{&amp;lt; /columns &amp;gt;}} Example #  Left Content #  Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://1901.github.io/shortcodes/details/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://1901.github.io/shortcodes/details/</guid>
+      <description>Details #  Details shortcode is a helper for details html5 element. It is going to replace expand shortcode.
+Example #  {{&amp;lt; details &amp;#34;Title&amp;#34; [open] &amp;gt;}} ## Markdown content Lorem markdownum insigne... {{&amp;lt; /details &amp;gt;}} {{&amp;lt; details title=&amp;#34;Title&amp;#34; open=true &amp;gt;}} ## Markdown content Lorem markdownum insigne... {{&amp;lt; /details &amp;gt;}} Title Markdown content #  Lorem markdownum insigne&amp;hellip;   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://1901.github.io/shortcodes/expand/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://1901.github.io/shortcodes/expand/</guid>
+      <description>Expand #  Expand shortcode can help to decrease clutter on screen by hiding part of text. Expand content by clicking on it.
+Example #  Default #  {{&amp;lt; expand &amp;gt;}} ## Markdown content Lorem markdownum insigne... {{&amp;lt; /expand &amp;gt;}}   Expand ↕  Markdown content Lorem markdownum insigne&amp;hellip;    With Custom Label #  {{&amp;lt; expand &amp;#34;Custom Label&amp;#34; &amp;#34;...&amp;#34; &amp;gt;}} ## Markdown content Lorem markdownum insigne.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://1901.github.io/shortcodes/hints/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://1901.github.io/shortcodes/hints/</guid>
+      <description>Hints #  Hint shortcode can be used as hint/alerts/notification block.
+There are 3 colors to choose: info, warning and danger.
+{{&amp;lt; hint [info|warning|danger] &amp;gt;}} **Markdown content** Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa {{&amp;lt; /hint &amp;gt;}} Example #  Markdown content
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa  Markdown content</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://1901.github.io/shortcodes/katex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://1901.github.io/shortcodes/katex/</guid>
+      <description>KaTeX #  KaTeX shortcode let you render math typesetting in markdown document. See KaTeX
+Example #  {{&amp;lt; katex [display] [class=&amp;#34;text-center&amp;#34;] &amp;gt;}} f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi {{&amp;lt; /katex &amp;gt;}}     \[f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi\]    Display Mode Example #  Here is some inline example:  \(\pi(x)\)  , rendered in the same line. And below is display example, having display: block  \[f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi\]  Text continues here.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://1901.github.io/shortcodes/mermaid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://1901.github.io/shortcodes/mermaid/</guid>
+      <description>Mermaid Chart #   MermaidJS is library for generating svg charts and diagrams from text.
+Override Mermaid Initialization Config
+To override the initialization config for Mermaid, create a mermaid.json file in your assets folder!
+ Example #  {{&amp;lt; mermaid [class=&amp;#34;text-center&amp;#34;]&amp;gt;}} stateDiagram-v2 State1: The state with a note note right of State1 Important information! You can write notes. end note State1 --&amp;gt; State2 note left of State2 : This is the note to the left.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://1901.github.io/shortcodes/section/first-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://1901.github.io/shortcodes/section/first-page/</guid>
+      <description>First page #  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://1901.github.io/shortcodes/section/second-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://1901.github.io/shortcodes/section/second-page/</guid>
+      <description>Second Page #  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://1901.github.io/shortcodes/tabs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://1901.github.io/shortcodes/tabs/</guid>
+      <description>Tabs #  Tabs let you organize content by context, for example installation instructions for each supported platform.
+{{&amp;lt; tabs &amp;#34;uniqueid&amp;#34; &amp;gt;}} {{&amp;lt; tab &amp;#34;MacOS&amp;#34; &amp;gt;}} # MacOS Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab &amp;#34;Linux&amp;#34; &amp;gt;}} # Linux Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab &amp;#34;Windows&amp;#34; &amp;gt;}} # Windows Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; /tabs &amp;gt;}} Example #  MacOS MacOS #  This is tab MacOS content.
+Lorem markdownum insigne. Olympo signis Delphis!</description>
+    </item>
+    
+    <item>
+      <title>Archives</title>
+      <link>https://1901.github.io/posts/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://1901.github.io/posts/archives/</guid>
+      <description>This page contains an archive of all posts.</description>
+    </item>
+    
+  </channel>
+</rss>

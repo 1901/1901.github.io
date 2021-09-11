@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="尝试使用 Hugo 来搭建静态博客。
+安装 #  我是用的 macOS，如果是其他系统请直接参考 官方文档。
+brew install hugo 创建博客 #  hugo new site myblog 安装主题 #  可以在这里找到你喜欢的主题。(本站采用的就是 hugo-book 主题)
+  https://themes.gohugo.io  cd themes git clone --depth 1 https://github.com/alex-shpak/hugo-book book ">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="使用 Hugo 搭建博客" />
+<meta property="og:description" content="尝试使用 Hugo 来搭建静态博客。
+安装 #  我是用的 macOS，如果是其他系统请直接参考 官方文档。
+brew install hugo 创建博客 #  hugo new site myblog 安装主题 #  可以在这里找到你喜欢的主题。(本站采用的就是 hugo-book 主题)
+  https://themes.gohugo.io  cd themes git clone --depth 1 https://github.com/alex-shpak/hugo-book book " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://1901.github.io/posts/%E4%BD%BF%E7%94%A8-Hugo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-10T20:07:01+08:00" />
+<meta property="article:modified_time" content="2021-09-11T15:44:40+08:00" />
+
+<title>使用 Hugo 搭建博客 | 1901 防糊涂笔记</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.37da316af608c7a3722f4cf4e3c391fa4276a58dcee0725ce1f37d982d891581.js" integrity="sha256-N9oxavYIx6NyL0z048OR&#43;kJ2pY3O4HJc4fN9mC2JFYE=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>1901 防糊涂笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li>
+  <a href="/posts/">Blog</a></li>
+<li>
+  <a href="/categories/">Categories</a></li>
+<li>
+  <a href="/tags/">Tags</a></li>
+<li>
+  <a href="/shortcodes/">Shortcodes</a></li>
+<li>
+  <a href="/about/">About</a></li>
+</ul>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/1901" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="mailto:kaixuan1901@gmail.com" target="_blank" rel="noopener">
+        Email
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>使用 Hugo 搭建博客</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#安装">安装</a></li>
+        <li><a href="#创建博客">创建博客</a></li>
+        <li><a href="#安装主题">安装主题</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/%E4%BD%BF%E7%94%A8-Hugo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">使用 Hugo 搭建博客</a>
+  </h1>
+  
+  <h5>2021-09-10</h5>
+
+
+
+  
+
+  
+
+
+
+<p>尝试使用 <code>Hugo</code> 来搭建静态博客。</p>
+<h2 id="安装">
+  安装
+  <a class="anchor" href="#%e5%ae%89%e8%a3%85">#</a>
+</h2>
+<p>我是用的 <code>macOS</code>，如果是其他系统请直接参考 
+  <a href="https://gohugo.io/getting-started/installing/">官方文档</a>。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install hugo
+</code></pre></div><h2 id="创建博客">
+  创建博客
+  <a class="anchor" href="#%e5%88%9b%e5%bb%ba%e5%8d%9a%e5%ae%a2">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site myblog
+</code></pre></div><h2 id="安装主题">
+  安装主题
+  <a class="anchor" href="#%e5%ae%89%e8%a3%85%e4%b8%bb%e9%a2%98">#</a>
+</h2>
+<p>可以在这里找到你喜欢的主题。(本站采用的就是 hugo-book 主题)</p>
+<ul>
+<li>
+  <a href="https://themes.gohugo.io">https://themes.gohugo.io</a></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd themes
+git clone --depth <span style="color:#ae81ff">1</span> https://github.com/alex-shpak/hugo-book book
+</code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#安装">安装</a></li>
+        <li><a href="#创建博客">创建博客</a></li>
+        <li><a href="#安装主题">安装主题</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

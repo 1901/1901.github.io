@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 1901 防糊涂笔记</title>
+    <link>https://1901.github.io/tags/</link>
+    <description>Recent content in Tags on 1901 防糊涂笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 14 Oct 2012 14:49:48 +0800</lastBuildDate><atom:link href="https://1901.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>database</title>
+      <link>https://1901.github.io/tags/database/</link>
+      <pubDate>Sun, 14 Oct 2012 14:49:48 +0800</pubDate>
+      
+      <guid>https://1901.github.io/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sqlite</title>
+      <link>https://1901.github.io/tags/sqlite/</link>
+      <pubDate>Sun, 14 Oct 2012 14:49:48 +0800</pubDate>
+      
+      <guid>https://1901.github.io/tags/sqlite/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
